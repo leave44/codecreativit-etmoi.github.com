@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Football</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz - Football</h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="parcour.html">Parcours</a></li>
+                <li><a href="competances.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="exp.html">Projets et Stages</a></li>
+                <li><a href="Manifestations Scientifiques.html">Manifestations Scientifiques</a></li>
+                <li><a href="passion.html">Passions</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="iit.html" >iit</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="quiz-container">
+        <h2>Testez vos connaissances sur le football !</h2>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question" id="q1">
+                <p>1. Quelle est l'équipe à avoir gagné la première Coupe du Monde de football ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q1" value="Italie"> Italie</label>
+                    <label><input type="radio" name="q1" value="Brésil"> Brésil</label>
+                    <label><input type="radio" name="q1" value="Uruguay"> Uruguay</label>
+                    <label><input type="radio" name="q1" value="France"> France</label>
+                </div>
+                <button type="button" onclick="checkAnswer(1, 'Uruguay')">Valider</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" id="q2">
+                <p>2. Qui est le seul africain à avoir gagné le Ballon d'Or ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q2" value="Sadio Mané"> Sadio Mané</label>
+                    <label><input type="radio" name="q2" value="George Weah"> George Weah</label>
+                    <label><input type="radio" name="q2" value="Didier Drogba"> Didier Drogba</label>
+                    <label><input type="radio" name="q2" value="Mohamed Salah"> Mohamed Salah</label>
+                </div>
+                <button type="button" onclick="checkAnswer(2, 'George Weah')">Valider</button>
+                <p id="feedback2"></p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" id="q3">
+                <p>3. À part Messi, qui est l'autre joueur à avoir gagné 3 Ballons d'Or consécutifs ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q3" value="Van Basten"> Van Basten</label>
+                    <label><input type="radio" name="q3" value="Johan Cruyff"> Johan Cruyff</label>
+                    <label><input type="radio" name="q3" value="Michel Platini"> Michel Platini</label>
+                    <label><input type="radio" name="q3" value="Cristiano Ronaldo"> Cristiano Ronaldo</label>
+                </div>
+                <button type="button" onclick="checkAnswer(3, 'Michel Platini')">Valider</button>
+                <p id="feedback3"></p>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" id="q4">
+                <p>4. Quel est le premier numéro floqué sur le dos de Messi ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q4" value="10"> 10</label>
+                    <label><input type="radio" name="q4" value="19"> 19</label>
+                    <label><input type="radio" name="q4" value="30"> 30</label>
+                    <label><input type="radio" name="q4" value="28"> 28</label>
+                </div>
+                <button type="button" onclick="checkAnswer(4, '30')">Valider</button>
+                <p id="feedback4"></p>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" id="q5">
+                <p>5. Quelle est la première équipe de Cristiano Ronaldo ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q5" value="Sporting"> Sporting</label>
+                    <label><input type="radio" name="q5" value="Manchester United"> Manchester United</label>
+                    <label><input type="radio" name="q5" value="Real Madrid"> Real Madrid</label>
+                    <label><input type="radio" name="q5" value="Juventus"> Juventus</label>
+                </div>
+                <button type="button" onclick="checkAnswer(5, 'Sporting')">Valider</button>
+                <p id="feedback5"></p>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question" id="q6">
+                <p>6. Quelle est l'équipe qui a remporté le plus d'Europa League ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q6" value="Séville"> Séville</label>
+                    <label><input type="radio" name="q6" value="Real Madrid"> Real Madrid</label>
+                    <label><input type="radio" name="q6" value="Tottenham"> Tottenham Hotspur</label>
+                    <label><input type="radio" name="q6" value="Barcelone"> Barcelone</label>
+                </div>
+                <button type="button" onclick="checkAnswer(6, 'Séville')">Valider</button>
+                <p id="feedback6"></p>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question" id="q7">
+                <p>7. Quelle est la nation ayant perdu le plus de finales de Coupe du Monde ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q7" value="Allemagne"> Allemagne</label>
+                    <label><input type="radio" name="q7" value="Pays-Bas"> Pays-Bas</label>
+                    <label><input type="radio" name="q7" value="France"> France</label>
+                    <label><input type="radio" name="q7" value="Brésil"> Brésil</label>
+                </div>
+                <button type="button" onclick="checkAnswer(7, 'Allemagne')">Valider</button>
+                <p id="feedback7"></p>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question" id="q8">
+                <p>8. Qui est le dernier joueur à avoir remporté le Ballon d'Or ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q8" value="Vinícius Jr."> Vinícius Jr.</label>
+                    <label><input type="radio" name="q8" value="Rodri"> Rodri</label>
+                    <label><input type="radio" name="q8" value="Haaland"> Haaland</label>
+                    <label><input type="radio" name="q8" value="Mbappé"> Mbappé</label>
+                </div>
+                <button type="button" onclick="checkAnswer(8, 'Rodri')">Valider</button>
+                <p id="feedback8"></p>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question" id="q9">
+                <p>9. En quelle année la Tunisie a-t-elle gagné la Coupe d'Afrique des Nations ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q9" value="2015"> 2015</label>
+                    <label><input type="radio" name="q9" value="2000"> 2000</label>
+                    <label><input type="radio" name="q9" value="2004"> 2004</label>
+                    <label><input type="radio" name="q9" value="2008"> 2008</label>
+                </div>
+                <button type="button" onclick="checkAnswer(9, '2004')">Valider</button>
+                <p id="feedback9"></p>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question" id="q10">
+                <p>10. Qui est le meilleur buteur de l'histoire de la Coupe du Monde ?</p>
+                <div class="radio-button-container">
+                    <label><input type="radio" name="q10" value="Klose"> Klose</label>
+                    <label><input type="radio" name="q10" value="Messi"> Messi</label>
+                    <label><input type="radio" name="q10" value="Cristiano Ronaldo"> Cristiano Ronaldo</label>
+                    <label><input type="radio" name="q10" value="Pelé"> Pelé</label>
+                </div>
+                <button type="button" onclick="checkAnswer(10, 'Klose')">Valider</button>
+                <p id="feedback10"></p>
+            </div>
+
+            <!-- Affichage du score -->
+            <div id="score-container">
+                <button type="button" onclick="showScore()">Afficher le score</button>
+                <p id="final-score"></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let score = 0;
+
+        function checkAnswer(questionNumber, correctAnswer) {
+            const selectedAnswer = document.querySelector(`input[name="q${questionNumber}"]:checked`);
+            const feedback = document.getElementById(`feedback${questionNumber}`);
+            
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswer) {
+                    feedback.textContent = "Bonne réponse !";
+                    feedback.style.color = "green";
+                    score++;
+                } else {
+                    feedback.textContent = `Mauvaise réponse. La bonne réponse est ${correctAnswer}.`;
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "Veuillez sélectionner une réponse.";
+                feedback.style.color = "orange";
+            }
+        }
+
+        function showScore() {
+            document.getElementById('final-score').textContent = `Votre score est : ${score} / 10`;
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Yessine Bejar. All copyrights are saved.</p>
+    </footer>
+    
+</body>
+</html>
